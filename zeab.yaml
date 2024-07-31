@@ -1,0 +1,24 @@
+apiVersion: zeabur.com/v1
+kind: Template
+metadata:
+    name: Easynews
+spec:
+    description: Stremio Addon
+    coverImage: https://pbs.twimg.com/profile_images/479627852757733376/8v9zH7Yo_400x400.jpeg
+    tags:
+        - API
+    readme: Community Stremio Easynews Addon
+    services:
+        - name: Easynews Stremio
+          template: GIT
+          spec:
+            source:
+                source: GITHUB
+                repo: 836125726
+                branch: main
+            env:
+                EASYNEWS_USERNAME:
+                EASYNEWS_PASSWORD:
+                TMDB_API_KEY:
+                    default: ""
+          domainKey: ""
