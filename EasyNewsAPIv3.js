@@ -8,9 +8,9 @@ class EasyNewsAPIv3 {
 
   constructor() {
 
-    this.username = storm3;
+    this.username = process.env.EASYNEWS_USERNAME;
 
-    this.password = hurricane326;
+    this.password = process.env.EASYNEWS_PASSWORD;
 
     if (!this.username || !this.password) {
 
